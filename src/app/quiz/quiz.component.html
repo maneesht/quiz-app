@@ -1,0 +1,13 @@
+<h1> Question {{id}}: </h1>
+<h3 *ngIf="question"> {{question.question}}
+</h3>
+<div>
+  <div layout-wrap layout="row" *ngIf="question" layout-align="center start">
+    <md-card flex="25" (click)="answer = answer == op ? undefined : op" [class.selected]="answer == op" *ngFor="let op of question.options">
+      <md-card-content>
+        {{op}}
+      </md-card-content>
+    </md-card>
+  </div>
+  <button md-raised-button color="primary" [disabled]="!answer" (click)="next()"> Next </button>
+</div>

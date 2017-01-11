@@ -1,0 +1,11 @@
+{
+    "question": "AngularJS is great for ",
+    "options": [
+        "responsive Web Applications",
+        "graphics-intensive web applications",
+        "complex business applications",
+        "B and C",
+        "A and C"
+    ],
+    "answer": "A and C"
+}

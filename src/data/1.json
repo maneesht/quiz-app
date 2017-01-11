@@ -1,0 +1,10 @@
+{
+    "question": "There's a div. If you wanted to change the color of the text you would...",
+    "options": [
+        "Add style='text-color:blue'",
+        "Add style='color: blue'",
+        "Just create a new class blue",
+        "All of the above"
+    ],
+    "answer": "Add style='color: blue'"
+}

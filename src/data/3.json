@@ -1,0 +1,10 @@
+{
+    "question": "AngularJS 1.X is ",
+    "options": [
+        "a framework that was developed in TypeScript",
+        "the latest version of Angular",
+        "an MVC framework",
+        "a JavaScript application"
+    ],
+    "answer": "an MVC framework"
+}

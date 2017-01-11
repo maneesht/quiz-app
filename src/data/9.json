@@ -1,0 +1,10 @@
+{
+    "question": "What element would you use to show an image?",
+    "options": [
+        "<p src='img-src.png'></p>",
+        "<a src='img-src.png'></p>",
+        "<img src='img-src.png'>",
+        "<image href='img-src.png'></image>"
+    ],
+    "answer": "<img src='img-src.png'>"
+}

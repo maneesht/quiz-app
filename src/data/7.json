@@ -1,0 +1,10 @@
+{
+    "question": "The web works like this: ",
+    "options": [
+        "A user goes to a website. By doing so, the user remotely accesses that website's code and the browser downloads it.",
+        "A user goes to a website. A DNS server sends back a status code to the browser.",
+        "A user goes to a website. DNS Servers look up the server for that site and send requests to that server",
+        "none of the above"
+    ],
+    "answer": "A user goes to a website. DNS Servers look up the server for that site and send requests to that server"
+}

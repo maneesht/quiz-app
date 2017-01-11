@@ -1,0 +1,11 @@
+{
+    "question": "Observables ",
+    "options": [
+        "can only be used Angular 2.0",
+        "are a part of the library RXJS",
+        "can only be used in HTTP requests",
+        "B and C",
+        "A and C"
+    ],
+    "answer":"are a part of the library RXJS"
+}

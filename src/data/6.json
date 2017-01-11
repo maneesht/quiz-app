@@ -1,0 +1,10 @@
+{
+    "question": "RXJS ",
+    "options": [
+        "is a reactive library for javascript",
+        "relies on promises",
+        "is required for Angular 2.0",
+        "created the new version of Angular"
+    ],
+    "answer": "is a reactive library for javascript"
+}

@@ -1,0 +1,10 @@
+{
+    "question": "What is the difference between components and directives?",
+    "options": [
+        "No difference. Same thing.",
+        "Directives aren't able to manipulate the DOM, but components are",
+        "Components aren't able to manipulate the DOM, but directives are",
+        "Directives are preferred over components regardless of the use"
+    ],
+    "answer": "Components aren't able to manipulate the DOM, but directives are"
+}

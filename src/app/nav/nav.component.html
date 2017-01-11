@@ -1,0 +1,16 @@
+<md-toolbar color="primary" (click)="sidenav.toggle()">
+  <button md-button class="md-icon-button" aria-label="settings">
+    <md-icon>menu</md-icon>
+  </button>
+</md-toolbar>
+<md-sidenav-container>
+  <md-sidenav mode="side" #sidenav>
+    <md-nav-list>
+      <md-list-item routerLink="">Home</md-list-item>
+      <md-list-item><a [routerLink]="['/quiz', 1]">Quiz</a></md-list-item>
+    </md-nav-list>
+  </md-sidenav>
+  <div (click)="sidenav.close()">
+    <router-outlet></router-outlet>
+  </div>
+</md-sidenav-container>

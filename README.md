@@ -1,6 +1,7 @@
 # QuizApp
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+angular-cli is used to develop Angular 2.X applications very easily.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -11,6 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+Run `npm i` to install dependencies.
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests

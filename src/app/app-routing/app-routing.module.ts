@@ -11,7 +11,7 @@ import { FinishComponent } from '../finish/finish.component';
     CommonModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: 'quiz/:id', component: QuizComponent },
+      {path: 'quiz', component: QuizComponent },
       {path: 'finish', component: FinishComponent }
     ])
   ],

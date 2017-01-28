@@ -1,6 +1,7 @@
 import { ActionReducer, Action } from '@ngrx/store';
 export const ADD = 'ADD';
 export const REMOVE = 'REMOVE';
+export const UPDATE = 'UPDATE';
 export function questionReducer(state = [], action: Action) {
     switch(action.type) {
        case ADD:
@@ -8,6 +9,8 @@ export function questionReducer(state = [], action: Action) {
             ...state,
             action.payload
         ];
+        case UPDATE:
+            return state;
        case REMOVE: 
         return state;
        default:

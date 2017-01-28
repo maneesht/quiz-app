@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { StoreModule } from '@ngrx/store';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { questionReducer } from './questions';
     HttpModule,
     AppRoutingModule,
     MaterialModule.forRoot(),
+    FlexLayoutModule.forRoot(),
     StoreModule.provideStore({ questions: questionReducer })
   ],
   providers: [QuestionDataService, StateService],

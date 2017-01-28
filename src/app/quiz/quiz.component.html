@@ -1,13 +1,18 @@
-<h1> Question {{id}}: </h1>
-<h3 *ngIf="question"> {{question.question}}
-</h3>
-<div>
-  <div layout-wrap layout="row" *ngIf="question" layout-align="center start">
-    <md-card flex="25" (click)="answer = answer == op ? undefined : op" [class.selected]="answer == op" *ngFor="let op of question.options">
-      <md-card-content>
-        {{op}}
-      </md-card-content>
-    </md-card>
+<div fxLayout="column">
+  <div style="margin: 40px 10px 10px 10px;">
+    <div *ngIf="question" class="col s12">
+      <md-card (click)="answer = answer == op ? undefined : op">
+        <md-card-title> Question {{id}} </md-card-title>
+        <md-card-content>
+          <div fxLayout="row" fxLayoutWrap="wrap">
+            <h3 fxFlex="100" *ngIf="question"> {{question.question}}</h3>
+            <md-radio-group fxLayout="row" fxLayoutWrap="wrap" [(ngModel)]="answer">
+              <md-radio-button style="padding: 25px" fxFlex="50" [value]="op" *ngFor="let op of question.options" >{{op}}</md-radio-button>
+            </md-radio-group>
+          </div>
+        </md-card-content>
+      </md-card>
+    </div>
+    <button fxLayout="row" fxLayoutAlign="end center" md-raised-button color="primary" fxLayoutAlign="center end" [disabled]="!answer" (click)="next()"> Next </button>
   </div>
-  <button md-raised-button color="primary" [disabled]="!answer" (click)="next()"> Next </button>
 </div>

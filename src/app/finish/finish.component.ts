@@ -12,10 +12,16 @@ import { StateService } from '../state.service';
 })
 export class FinishComponent implements OnInit {
   correct: number;
+  recommendation: string;
+  highScore: boolean;
   constructor(private store: Store<AppState>, private stateService: StateService) { }
 
   ngOnInit() {
     this.store.select(state => state.questions.filter(question => question.correct))
-      .subscribe((info) => {this.correct = info.length});
+      .subscribe((info) => {
+        this.correct = info.length;
+        this.recommendation = this.correct < 4 ? "Beginner" : "Advanced";
+        this.highScore = this.correct >= 8;
+      });
   }
 }

@@ -1,2 +1,4 @@
 <h1> Congratulations on finishing the quiz! </h1>
-<h3> You got {{ correct }} / 10 questions right! </h3>
+<h2> You got {{ correct }} / 10 questions right! </h2>
+<h3> We recommend you attend the {{ recommendation }} track! But you're welcome to attend either track!</h3>
+<h3 *ngIf="highScore"> You did really well. If you're interested in working with us, send a screenshot and contact wdc@purdue.edu.</h3>

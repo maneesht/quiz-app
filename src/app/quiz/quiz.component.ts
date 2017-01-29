@@ -4,7 +4,6 @@ import 'rxjs/add/operator/merge';
 import { animate, Component, transition, trigger, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router} from '@angular/router';
 import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/subscription';
 import { Store } from '@ngrx/store';
 
 import { QuestionDataService } from '../question-data.service';
@@ -31,7 +30,6 @@ export class QuizComponent implements OnInit {
   questions: AppStore[];
   answer: string;
   questionsObservable: Observable<AppStore[]>;
-  subscription: Subscription;
   constructor(private router: Router, private route: ActivatedRoute, private quizData: QuestionDataService, private store: Store<AppState>) { 
   }
 
